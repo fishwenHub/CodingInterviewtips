@@ -4,5 +4,14 @@
     <string name="app_name">Coding Interview Tips</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_link_detail">link Detail</string>
+    <string name="agree">Absolutely!</string>
+    <string name="notAgree">Hell No!</string>
+    <string name="welcome">Don\'t you think this is the best App in the Ocean?</string>
+    <string name="linkprogramcreek">Top 10 Algorithms for Coding Interview</string>
+    <string name="twosum">Two Sum Solution</string>
+    <string name="title_activity_open_browser">OpenBrowser</string>
+    <string name="title_activity_detailed_code">Detailed Code Solution</string>
+    <string name="twosumquestion">Two SUM: Given an array of integers, find two numbers such that they add up to a specific target number.</string>
 
 </resources>

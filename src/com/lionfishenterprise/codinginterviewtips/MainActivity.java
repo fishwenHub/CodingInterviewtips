@@ -4,24 +4,58 @@ package com.lionfishenterprise.codinginterviewtips;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.os.Build;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity{
+    
+    private static Button button1, button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        onClickButton1Listener();
+        onClickButton2Listener();
+
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction().add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+    }
+        
+       public void onClickButton1Listener() {
+           button1 = (Button)findViewById(R.id.button1);
+           
+           button1.setOnClickListener(new View.OnClickListener() {
+               
+               @Override
+               public void onClick(View v) {
+                   Intent launchWebLinkIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/"));
+                   startActivity(launchWebLinkIntent);
+               }
+           });
+       }
+        
+       public void onClickButton2Listener() {
+           button2 = (Button)findViewById(R.id.button2);
+           
+           button2.setOnClickListener(new View.OnClickListener() {
+               
+               @Override
+               public void onClick(View v) {
+                   Intent launchDetailCodeIntent = new Intent("com.lionfishenterprise.codinginterviewtips.DetailedCodeActivity" );
+                   startActivity(launchDetailCodeIntent);
+               }
+           });
     }
 
     @Override
@@ -58,4 +92,5 @@ public class MainActivity extends Activity {
             return rootView;
         }
     }
+
 }
