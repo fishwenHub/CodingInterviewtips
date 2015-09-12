@@ -41,6 +41,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LinkedListFastSlowActivity"
+            android:label="@string/title_activity_detailed_code" >
+            android:parentActivityName=".MainActivity" >
+            <intent-filter>
+                <action android:name="com.lionfishenterprise.codinginterviewtips.LinkedListFastSlowActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

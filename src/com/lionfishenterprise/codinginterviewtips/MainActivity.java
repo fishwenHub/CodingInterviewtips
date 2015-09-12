@@ -13,29 +13,47 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.os.Build;
 
 public class MainActivity extends Activity{
     
-    private static Button button1, button2;
+    private static Button mButton1, mButton2, mButtonLinkedListSlowFast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        onClickButton1Listener();
-        onClickButton2Listener();
-
+        
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction().add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+//        mContactDetail = (ImageView) findViewById(R.id.contact_details_image);
+//        mContactDetail.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                showNativeContactDetail();
+//            }
+//        });
+        onClickButton1Listener();
+        onClickButton2Listener();
+        mButtonLinkedListSlowFast = (Button) findViewById(R.id.button_linkedlist_slowfast_ptr);
+        mButtonLinkedListSlowFast.setOnClickListener(new View.OnClickListener() {
+            
+            @Override
+            public void onClick(View v) {
+                Intent launchLinkListIntent = new Intent("com.lionfishenterprise.codinginterviewtips.LinkedListFastSlowActivity");
+                startActivity(launchLinkListIntent);
+            }
+        });
+
     }
         
        public void onClickButton1Listener() {
-           button1 = (Button)findViewById(R.id.button1);
+           mButton1 = (Button)findViewById(R.id.button1);
            
-           button1.setOnClickListener(new View.OnClickListener() {
+           mButton1.setOnClickListener(new View.OnClickListener() {
                
                @Override
                public void onClick(View v) {
@@ -46,13 +64,13 @@ public class MainActivity extends Activity{
        }
         
        public void onClickButton2Listener() {
-           button2 = (Button)findViewById(R.id.button2);
+           mButton2 = (Button)findViewById(R.id.button2);
            
-           button2.setOnClickListener(new View.OnClickListener() {
+           mButton2.setOnClickListener(new View.OnClickListener() {
                
                @Override
                public void onClick(View v) {
-                   Intent launchDetailCodeIntent = new Intent("com.lionfishenterprise.codinginterviewtips.DetailedCodeActivity" );
+                   Intent launchDetailCodeIntent = new Intent("com.lionfishenterprise.codinginterviewtips.DetailedCodeActivity");
                    startActivity(launchDetailCodeIntent);
                }
            });

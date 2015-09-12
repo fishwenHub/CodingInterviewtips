@@ -10,8 +10,12 @@
     <string name="welcome">Don\'t you think this is the best App in the Ocean?</string>
     <string name="linkprogramcreek">Top 10 Algorithms for Coding Interview</string>
     <string name="twosum">Two Sum Solution</string>
+    <string name="linkedlist_slowfast_ptr">Linked List Slow Fast Pointers</string>
     <string name="title_activity_open_browser">OpenBrowser</string>
-    <string name="title_activity_detailed_code">Detailed Code Solution</string>
-    <string name="twosumquestion">Two SUM: Given an array of integers, find two numbers such that they add up to a specific target number.</string>
+    <string name="title_activity_detailed_code">Solution and Analysis</string>
+    <string name="twosumquestion">Two Sum: Given an array of integers, find two numbers such that they add up to a specific target number.</string>
+    <string name="image_desc">TwoSum Input Ouput</string>
+    <string name="image_twosum_solution_desc">TwoSum HashTable Solution</string>
+    <string name="twosum_analysis">Time complexity depends on the put and get operations of HashMap which is normally O(1). Time complexity of this solution is O(n).</string>
 
 </resources>
