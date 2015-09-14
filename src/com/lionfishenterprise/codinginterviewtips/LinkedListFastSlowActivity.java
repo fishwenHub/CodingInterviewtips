@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class LinkedListFastSlowActivity extends Activity {
 
@@ -12,6 +14,12 @@ public class LinkedListFastSlowActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linked_list_fast_slow);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        TextView problemDescription = (TextView) findViewById(R.id.problem_description);
+        problemDescription.setText(R.string.linkedlist_remove_nth_node);
+        ImageView  solutionImage = (ImageView) findViewById(R.id.linkedlist_remove_nthfromend_solution);
+        solutionImage.setImageResource(R.drawable.linkedlist_remove_nthfromend_solution);
+        
     }
 
     @Override

@@ -43,7 +43,7 @@
         </activity>
         <activity
             android:name=".LinkedListFastSlowActivity"
-            android:label="@string/title_activity_detailed_code" >
+            android:label="@string/title_activity_detailed_code"
             android:parentActivityName=".MainActivity" >
             <intent-filter>
                 <action android:name="com.lionfishenterprise.codinginterviewtips.LinkedListFastSlowActivity" />

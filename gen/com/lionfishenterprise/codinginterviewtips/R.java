@@ -23,22 +23,26 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int two_sum_hashtable_solution=0x7f020001;
-        public static final int twosumexample=0x7f020002;
+        public static final int linkedlist_remove_nthfromend_solution=0x7f020001;
+        public static final int nine_patch=0x7f020002;
+        public static final int two_sum_hashtable_solution=0x7f020003;
+        public static final int twosumexample=0x7f020004;
     }
     public static final class id {
         public static final int TextView2=0x7f080003;
-        public static final int action_settings=0x7f08000c;
-        public static final int button1=0x7f080006;
-        public static final int button2=0x7f080008;
-        public static final int button_linkedlist_slowfast_ptr=0x7f08000a;
-        public static final int container=0x7f080004;
+        public static final int action_settings=0x7f08000e;
+        public static final int button1=0x7f080008;
+        public static final int button2=0x7f08000a;
+        public static final int button_linkedlist_slowfast_ptr=0x7f08000c;
+        public static final int container=0x7f080006;
         public static final int imageView1=0x7f080001;
         public static final int imageView2=0x7f080002;
-        public static final int tableRow1=0x7f080005;
-        public static final int tableRow2=0x7f080007;
-        public static final int tableRow3=0x7f080009;
-        public static final int tableRow4=0x7f08000b;
+        public static final int linkedlist_remove_nthfromend_solution=0x7f080005;
+        public static final int problem_description=0x7f080004;
+        public static final int tableRow1=0x7f080007;
+        public static final int tableRow2=0x7f080009;
+        public static final int tableRow3=0x7f08000b;
+        public static final int tableRow4=0x7f08000d;
         public static final int textView1=0x7f080000;
     }
     public static final class layout {
@@ -60,6 +64,7 @@ public final class R {
         public static final int hello_world=0x7f050001;
         public static final int image_desc=0x7f05000d;
         public static final int image_twosum_solution_desc=0x7f05000e;
+        public static final int linkedlist_remove_nth_node=0x7f050010;
         public static final int linkedlist_slowfast_ptr=0x7f050009;
         public static final int linkprogramcreek=0x7f050007;
         public static final int notAgree=0x7f050005;
@@ -98,6 +103,8 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int ButtonThemeStyle=0x7f060003;
         public static final int CodingQuestionFontStyle=0x7f060002;
+        public static final int MyButtonStyle=0x7f060004;
     }
 }

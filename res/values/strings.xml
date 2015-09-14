@@ -8,7 +8,7 @@
     <string name="agree">Absolutely!</string>
     <string name="notAgree">Hell No!</string>
     <string name="welcome">Don\'t you think this is the best App in the Ocean?</string>
-    <string name="linkprogramcreek">Top 10 Algorithms for Coding Interview</string>
+    <string name="linkprogramcreek">   Top 10 Algorithms for Coding Interview   </string>
     <string name="twosum">Two Sum Solution</string>
     <string name="linkedlist_slowfast_ptr">Linked List Slow Fast Pointers</string>
     <string name="title_activity_open_browser">OpenBrowser</string>
@@ -17,5 +17,11 @@
     <string name="image_desc">TwoSum Input Ouput</string>
     <string name="image_twosum_solution_desc">TwoSum HashTable Solution</string>
     <string name="twosum_analysis">Time complexity depends on the put and get operations of HashMap which is normally O(1). Time complexity of this solution is O(n).</string>
+    <string name="linkedlist_remove_nth_node">Given a linked list, remove the nth node from the end of list and return its head. 
+        For example, given linked list 1->2->3->4->5 and n = 2, the result is 1->2->3->5. Use fast and slow pointers. 
+        The fast pointer is n steps ahead of the slow pointer. When the fast reaches the end, the slow pointer points at 
+        the previous element of the target element. \nUse fast and slow pointers. The fast pointer is n steps ahead of the slow pointer. 
+        When the fast reaches the end, the slow pointer points at the previous element of the target element.</string>
+        
 
 </resources>
